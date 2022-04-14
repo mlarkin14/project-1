@@ -1,4 +1,4 @@
-var repoList = document.querySelector("ul");
+var repoList = document.querySelector("h3");
 var fetchButton = document.getElementById("fetch-button");
 
 function getApi() {
@@ -16,4 +16,5 @@ function getApi() {
     });
   alert("we did it!");
 }
+
 fetchButton.addEventListener("click", getApi);
