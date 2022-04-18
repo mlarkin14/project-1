@@ -1,9 +1,70 @@
 :root {
-    --bgColor: #007fff;
+    --mainColor: #007fff;
+    --secondColor: #3399FF;
+    --thridColor: #0000FF;
+    --textColor: #160e61;
+    --textColor2: #7a0a26;
+    --btnColor1: #e4e013;
 
 }
-
+*{
+    margin: 2px 2px 2px 2px;
+    padding: 2px 2px 2px 2px;
+}
 .bg-color{
-    background-color: var(--bgColor);
+    background-color: var(--mainColor);
 }
 
+.center{
+    justify-content: center;
+}
+
+.search{
+    padding: 10px 0 0 0;
+}
+
+.text-center{
+    text-align: center;
+}
+.weather-margin{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.margin{
+    margin: 0 10px 0 10px;
+}
+.days{
+    padding: 5 px;
+}
+.weather{
+    background-color: var(--secondColor);
+    border: var(--thridColor) 3px solid;
+    border-radius: 5px;
+    margin: 2px 0 2px 0;
+}
+
+.btn{
+    background-color: var(--btnColor1);
+}
+
+p{
+    color: var(--textColor);
+}
+
+.city-name{
+    color: var(--textColor2) ;
+}
+
+.dad-joke-box{
+    border: var(--thridColor) solid 3px;
+    border-radius: 5px;
+    background-color: var(--btnColor1);
+}
+/* .dad-img{
+    width: %;
+    height: auto;
+} */
+.dadjoke{
+    background-color: aliceblue;
+    justify-content: right;
+}
