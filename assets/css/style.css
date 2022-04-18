@@ -1,0 +1,28 @@
+:root {
+    --weaterh-card-color: royalblue;
+    --bg-color: black;
+    --light-text: #ffffff;
+}
+
+header {
+    color: var(--light-text);
+    text-align: center;
+    padding: 20px;
+}
+
+.form-title {
+    font-size: 1.2em;
+}
+
+.card {
+    width: 100%;
+}
+
+.fiveDay {
+    background-color: var(--weaterh-card-color);
+    margin: 15px;
+}
+
+h3 {
+    float: left;
+}
