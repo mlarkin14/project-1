@@ -1,87 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
-      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
-      crossorigin="anonymous"
-    />
-    <link
-      href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap"
-      rel="stylesheet"
-    />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet" />
     <title>Weather and Daily Dad Joke</title>
-  </head>
-  <body class="bg-warning">
+</head>
+
+<body class="bg-warning">
     <div class="container-fluid">
-      <div class="row">
-        <div class="col-md-12 mt-3">
-          <!--city, search and save-->
-          <div class="text-center">
-            <button
-              type="button"
-              class="btn btn-primary active btn-md m-2 text-center"
-              id ="fetch-button"
-            >
+        <div class="row">
+            <div class="col-md-12 mt-3">
+                <!--city, search and save-->
+                <div class="text-center">
+                    <button type="button" class="btn btn-primary active btn-md m-2 text-center" id="fetch-button">
               Search
             </button>
-            <input type="text" class="city-input" />
-          </div>
+                    <input type="text" class="city-input" />
+                </div>
 
-          <div class="search-weather">
-            <h3 class="text-center mt-3 mb-2">
-              City: <span class="city-name"></span
+                <div class="search-weather">
+                    <h3 class="text-center mt-3 mb-2">
+                        City: <span class="city-name"></span
               ><span class="today-date">1/1/2022</span>
-            </h3>
-            <div class="today-info mx-auto text-center">
-              <p class="today-temp">F</p>
-              <p class="today-wind">MPH</p>
-              <p class="today-humid">%</p>
-            </div>
-          </div>
+                    </h3>
+                    <div class="today-info mx-auto text-center">
+                        <p class="today-temp">F</p>
+                        <p class="today-wind">MPH</p>
+                        <p class="today-humid">%</p>
+                    </div>
+                </div>
 
-          <!--five/four day weather-->
-          <div class="row">
-            <!-- <div class="weather col-md-2 mx-auto text-center"> day 1
+                <!--five/four day weather-->
+                <div class="row">
+                    <!-- <div class="weather col-md-2 mx-auto text-center"> day 1
                         <p class="day">1/1/2022</p>
                         <p class="temp">F</p>
                         <p class="wind">MPH</p>
                         <p class="humid">%</p>
                     </div> -->
-            <div class="weather col-md-2 mx-auto text-center">
-              day 2
-              <p class="day">1/2/2022</p>
-              <p class="temp">F</p>
-              <p class="wind">MPH</p>
-              <p class="humid">%</p>
+                    <div class="weather col-md-2 mx-auto text-center">
+                        day 2
+                        <p class="day">1/2/2022</p>
+                        <p class="temp">F</p>
+                        <p class="wind">MPH</p>
+                        <p class="humid">%</p>
+                    </div>
+                    <div class="weather col-md-2 mx-auto text-center">
+                        day 3
+                        <p class="day">1/3/2022</p>
+                        <p class="temp">F</p>
+                        <p class="wind">MPH</p>
+                        <p class="humid">%</p>
+                    </div>
+                    <div class="weather col-md-2 mx-auto text-center">
+                        day 4
+                        <p class="day">1/4/2022</p>
+                        <p class="temp">F</p>
+                        <p class="wind">MPH</p>
+                        <p class="humid">%</p>
+                    </div>
+                    <div class="weather col-md-2 mx-auto text-center">
+                        day 5
+                        <p class="day">1/5/2022</p>
+                        <p class="temp">F</p>
+                        <p class="wind">MPH</p>
+                        <p class="humid">%</p>
+                    </div>
+                </div>
             </div>
-            <div class="weather col-md-2 mx-auto text-center">
-              day 3
-              <p class="day">1/3/2022</p>
-              <p class="temp">F</p>
-              <p class="wind">MPH</p>
-              <p class="humid">%</p>
-            </div>
-            <div class="weather col-md-2 mx-auto text-center">
-              day 4
-              <p class="day">1/4/2022</p>
-              <p class="temp">F</p>
-              <p class="wind">MPH</p>
-              <p class="humid">%</p>
-            </div>
-            <div class="weather col-md-2 mx-auto text-center">
-              day 5
-              <p class="day">1/5/2022</p>
-              <p class="temp">F</p>
-              <p class="wind">MPH</p>
-              <p class="humid">%</p>
-            </div>
-          </div>
         </div>
+
       </div>
       <!--dadjoke-->
       <div id="dadjokeoftheday" class="dadjoke text-center">
@@ -92,9 +84,18 @@
             src="https://i.kym-cdn.com/photos/images/original/001/707/893/06a.png"
             class="img-thumbnail"
           />
+
+        <!--dadjoke-->
+        <div class="dadjoke text-center">
+            <h3 id="dadjokeoftheday">Placeholder</h3>
+
         </div>
-      </div>
+        <img class="mx-auto d-block" alt="meme-generator" src="https://i.kym-cdn.com/photos/images/original/001/707/893/06a.png" class="img-thumbnail" />
+    </div>
+    </div>
     </div>
     <script src="./dadjokes.js"></script>
-  </body>
+</body>
+
 </html>
+
