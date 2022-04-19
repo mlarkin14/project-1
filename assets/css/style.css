@@ -1,12 +1,9 @@
 :root {
-<<<<<<< HEAD
     --bgColor: #007fff;
-
 }
 
-.bg-color{
+.bg-color {
     background-color: var(--bgColor);
-=======
     --weaterh-card-color: royalblue;
     --bg-color: black;
     --light-text: #ffffff;
@@ -33,5 +30,4 @@ header {
 
 h3 {
     float: left;
->>>>>>> feature/weather
 }
