@@ -95,30 +95,31 @@ function getData(city) {
                         $("span").attr("class", "btn btn-danger");
                     }
 
-                    /* Get 5 Day Forecast From Weather API */
-                    for (var i = 1; i < 6; i++) {
-                        var newCard = $("<div>").attr(
-                            "class",
-                            "col fiveDay bg-primary text-white rounded-lg p-2"
-                        );
-                        $("#weeklyForecast").append(newCard);
-                        var myDate = new Date(
-                            fullResponse.daily[i].dt * 1000
-                        ).toLocaleDateString("en-US");
-                        /* Display Date */
-                        newCard.append($("<h4>").html(myDate));
-                        var iconCode = fullResponse.daily[i].weather[0].icon;
-                        var iconURL =
-                            "http://openweathermap.org/img/w/" + iconCode + ".png";
-                        newCard.append($("<img>").attr("src", iconURL));
-                        var temp = Math.ceil(fullResponse.daily[i].temp["day"]);
-                        newCard.append($("<p>").html("Temp: " + temp + " &#8457"));
-                        var humidity = fullResponse.daily[i].humidity;
-                        newCard.append($("<p>").html("Humidity: " + humidity));
-                    }
+                    // /* Get 5 Day Forecast From Weather API */
+                    // for (var i = 1; i < 6; i++) {
+                    //     var newCard = $("<div>").attr(
+                    //         "class",
+                    //         "col fiveDay bg-primary text-white rounded-lg p-2"
+                    //     );
+                    //     $("#weeklyForecast").append(newCard);
+                    //     var myDate = new Date(
+                    //         fullResponse.daily[i].dt * 1000
+                    //     ).toLocaleDateString("en-US");
+                    //     /* Display Date */
+                    //     newCard.append($("<h4>").html(myDate));
+                    //     var iconCode = fullResponse.daily[i].weather[0].icon;
+                    //     var iconURL =
+                    //         "http://openweathermap.org/img/w/" + iconCode + ".png";
+                    //     newCard.append($("<img>").attr("src", iconURL));
+                    //     var temp = Math.ceil(fullResponse.daily[i].temp["day"]);
+                    //     newCard.append($("<p>").html("Temp: " + temp + " &#8457"));
+                    //     var humidity = fullResponse.daily[i].humidity;
+                    //     newCard.append($("<p>").html("Humidity: " + humidity));
+                    // }
                 });
         });
 }
+
 /* Search Button Listener */
 $("#searchCity").on("click", function() {
     var city = $("#city").val();

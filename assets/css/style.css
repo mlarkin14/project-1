@@ -1,33 +1,101 @@
+/*root var*/
 :root {
-    --bgColor: #007fff;
+    --mainColor: #007fff;
+    --mainColor2: #020631;
+    --secondColor: #3399FF;
+    --thridColor: #0000FF;
+    --weatherBoarder: #b9c6f0;
+    --textColor: #160e61;
+    --textColor2: #7a0a26;
+    --btnColor1: #e4e013;
 }
-
-.bg-color {
-    background-color: var(--bgColor);
-    --weaterh-card-color: royalblue;
-    --bg-color: black;
-    --light-text: #ffffff;
+/*universal style*/
+*{
+    margin: 2px 2px 2px 2px;
+    padding: 2px 2px 2px 2px;
 }
-
+p{
+    color: var(--textColor);
+}
+h1{
+    padding: 0px;
+    margin: 15px;
+}
+.body{
+    background-color: var(--mainColor2);
+}
+.main-body{
+    background-color: var(--mainColor);
+    border: solid 2px var(--mainColor);
+    border-radius: 10px;
+}
+.center{
+    justify-content: center;
+}
+.header{
+    font-size: 18px;
+    padding: 0px;
+    background-color: var();
+    color: var(--mainColor);
+}
+.text-center{
+    text-align: center;
+}
+.margin{
+    margin: 0 10px 0 10px;
+}
+/*header*/
 header {
     color: var(--light-text);
     text-align: center;
     padding: 20px;
 }
-
-.form-title {
+/*search,form,button*/
+.city-name{
+    color: var(--textColor2) ;
+}
+.search{
+    padding: 10px 0 5px 0;
+}
+.search-title {
     font-size: 1.2em;
 }
-
-.card {
-    width: 100%;
+.btn{
+    background-color: var(--btnColor1);
 }
 
-.fiveDay {
-    background-color: var(--weaterh-card-color);
-    margin: 15px;
+/*forcast*/
+.weather-margin{
+    margin-left: 10px;
+    margin-right: 10px;
 }
 
-h3 {
-    float: left;
+.days{
+    padding: 5 px;
+}
+.weather{
+    background-color: var(--secondColor);
+    border: var(--thridColor) 3px solid;
+    border-radius: 5px;
+    margin: 2px 0 2px 0;
+}
+
+/*dad joke css*/
+.dad-joke-box{
+    border: var(--thridColor) solid 3px;
+    border-radius: 5px;
+    background-color: var(--btnColor1);
+}
+.dadjoke{
+    background-color: aliceblue;
+    border:rgb(201, 115, 18) dashed 1.5px ;
+    justify-content: right;
+    
+}
+.dad-img{
+    width: 25%;
+    height: auto;
+    padding: 5px;
+    border: solid 5px;
+    border-radius: 10px;
 }
