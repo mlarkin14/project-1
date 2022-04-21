@@ -1,15 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<<<<<<< Updated upstream
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
     <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet" />
+=======
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <!--Pure Style-->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/purecss@2.1.0/build/pure-min.css"
+      integrity="sha384-yHIFVG6ClnONEA5yB5DJXfW2/KC173DIQrYoZMEtBvGzmf0PKiGyNEqe9N6BNDBH"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+>>>>>>> Stashed changes
     <title>Weather and Daily Dad Joke</title>
-</head>
+  </head>
 
+<<<<<<< Updated upstream
 <body class="bg-warning">
     <div class="container-fluid">
         <div class="row">
@@ -72,8 +94,53 @@
                     </div>
                 </div>
             </div>
-        </div>
+=======
+  <body class="body">
+    <header class="header">
+      <h1>Weather and Daily Dad Joke</h1>
+    </header>
 
+    <main class="main-body">
+      <div class="container-fluid">
+        <div class="text-center">
+          <!-- Input Form Column-->
+          <h2 class="search-title text-center search">Search</h2>
+          <div class="bg-light">
+            <div class="pure-g center">
+              <input type="text" id="city" class="pure-u-1-2" />
+
+              <button
+                class="btn btn-primary dadBtn pure-u-1-8"
+                type="button"
+                id="searchCity"
+              >
+                <i class="fas fa-search"></i>
+              </button>
+            </div>
+
+            <!-- Search List -->
+            <div class="list-group"></div>
+          </div>
+
+          <!-- Weather Display Column -->
+          <div class="">
+            <div class="">
+              <div class="card">
+                <!-- Current Weather Card -->
+                <div class="card-body"></div>
+              </div>
+            </div>
+            <!-- <div class="row">
+                        <h4>5-Day Forecast:</h4>
+                    </div> -->
+            <!-- Five Day Card -->
+            <!-- <div id="weeklyForecast" class="row"></div> -->
+          </div>
+>>>>>>> Stashed changes
+        </div>
+      </div>
+
+<<<<<<< Updated upstream
       </div>
       <!--dadjoke-->
       <div id="dadjokeoftheday" class="dadjoke text-center">
@@ -99,3 +166,36 @@
 
 </html>
 
+=======
+      <hr />
+      <!--dad joke-->
+      <div class="dad-joke-box">
+        <div class="text-center">
+          <h1 class="dad-joke-title">Dad Jokes</h1>
+          <div class="text-center">
+            <div id="dadjokeoftheday" class="dadjoke"></div>
+          </div>
+
+          <img
+            class="dad-img"
+            alt="dad-laugh"
+            src="https://dadding.com/wp-content/uploads/2021/01/LaughingDad-360x240.png"
+            class="img-thumbnail"
+          />
+        </div>
+      </div>
+    </main>
+
+    <script
+      src="https://kit.fontawesome.com/1cc5977b2c.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+    <script src="weatherapi.js"></script>
+    <script src="./assets/js/dadjokes.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+  </body>
+</html>
+>>>>>>> Stashed changes
